@@ -1,16 +1,27 @@
-.btn {
+.btn-danger {
     border-radius: 0;
     border: 2px solid $brand-red;
     background-color: $brand-red;
     font-size: 16px;
+    font-weight: 700;
+    outline: none;
+    padding: 24px 80px;
 
-    &--icon-arrow {
+    .btn-icon-arrow {
         margin-left: 10px;
-        font-size: 16px;
+        font-size: 12px;
+        display: inline-block;
+        transition: 0.25s ease-in-out; 
+    }
+
+    &:hover {
+        background-color: $brand-red-light;
+        border: 2px solid $brand-red-light;
+
+        .btn-icon-arrow {
+            transform: translateX(10px);
+            
+        }
     }
 }
 
-.btn:hover {
-    background-color: $brand-red;
-    opacity: 0.8;
-}
