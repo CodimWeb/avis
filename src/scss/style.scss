@@ -1,8 +1,20 @@
 //bs 4
-@import 'bootstrap/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
+//abstract
+@import 'abstract/variables';
+@import 'abstract/helpers';
+
+//base
 @import 'base/fonts';
 @import 'base/ui';
 
+//layout
 @import 'layout/header';
 @import 'layout/footer';
+
+//components
+@import 'components/card-info';
+@import 'components/map';
+@import 'components/discount';
+@import 'components/buttons';

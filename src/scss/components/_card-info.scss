@@ -1,0 +1,128 @@
+.card-info {
+    background-color: #F3F6FB;
+    border: none;
+    padding: 30px 24px;
+    margin-bottom: 32px;
+
+    &__title {
+        font-family: $PTS;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        .icon {
+            color: $brand-red;
+            margin-right: 16px;
+            font-size: 21px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        line-height: 24px;
+    }
+
+    &__list {
+        margin: 14px 0 0;
+        padding: 0;
+        list-style-type: none;
+
+        &__item {
+            position: relative;
+            padding-left: 20px;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 9px;
+
+            &:before {
+                content: '';
+                width: 5px;
+                height: 5px;
+                background: $brand-red;
+                border-radius: 50%;
+                position: absolute;
+                top: 10px;
+                left: 0;
+            }
+        }
+    }
+
+    &__warning {
+        padding-left: 32px;
+        position: relative;
+        margin-top: 10px;
+        max-width: 700px;
+        
+        &__text {
+            opacity: 0.6;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 0;
+        }
+
+        .icon-info-circled {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .icon-taxi {
+        font-size: 12px;
+        margin-right: 26px;
+        display: inline-block;
+        transform: translateY(-4px);
+    }
+
+    &__transport {
+        max-width: 507px;
+        display: flex;
+        align-items: flex-start;
+        padding: 16px 16px 19px;
+        margin-top: 20px;
+        text-decoration: none;
+        border: 1px solid #D9E2EE;
+        color: $text-base;
+        transition: 0.25s ease-in-out;
+
+        &__image {
+            width: 69px;
+            min-width: 69px;
+            height: 69px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &__description {
+            padding-left: 16px;
+        }
+
+        &__text {
+            font-size: 14px;
+            margin: 0;
+
+            .icon-arrow-right {
+                font-size: 11px;
+                display: inline-block;
+                transition: 0.25s ease-in-out;
+            }
+        }
+
+        &:hover {
+            color: $text-base;
+            border-color: $brand-red;
+            text-decoration: none;
+
+            .icon-arrow-right {
+                transform: translateX(8px);
+            }
+        }
+    }
+}
+
+.icon-info-circled {
+    color: #A2A3A3;
+    font-size: 18px;
+}

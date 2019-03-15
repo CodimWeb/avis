@@ -1,0 +1,14 @@
+.discount-wrapper {
+    min-height: 556px;
+    background-image: url(../img/discount.jpg);
+}
+
+.discount {
+    background-color: #F3F6FB;
+    max-width: 608px;
+    padding: 50px;
+
+    &__info {
+        margin: 24px 0;
+    }
+}

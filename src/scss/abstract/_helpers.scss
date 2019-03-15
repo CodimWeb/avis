@@ -1,0 +1,23 @@
+//vertical offset
+$i: 20;
+
+@while $i > -1 {
+  .mt-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+
+  $i: $i - 1;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+
+.text-underline {
+    text-decoration: underline;
+}

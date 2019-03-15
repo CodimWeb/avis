@@ -1,0 +1,28 @@
+.wrapper {
+    max-width: 1280px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1150px;
+}
+
+.primary-link {
+    color: $brand-red;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $brand-red;
+        text-decoration: none;
+        border-color: transparent;
+    }
+}
+
+.link-border-primary {
+    border-bottom: 1px solid $brand-red;
+    line-height: 1.2;
+}

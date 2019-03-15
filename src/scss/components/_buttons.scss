@@ -1,0 +1,16 @@
+.btn {
+    border-radius: 0;
+    border: 2px solid $brand-red;
+    background-color: $brand-red;
+    font-size: 16px;
+
+    &--icon-arrow {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+}
+
+.btn:hover {
+    background-color: $brand-red;
+    opacity: 0.8;
+}
