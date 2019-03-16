@@ -3,7 +3,7 @@
     margin-bottom: 112px;
     &-item {
         width: 288px;
-        height: 536px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         background-color: $brand-blue-light;
@@ -13,11 +13,41 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center top;
+            position: relative;
+
+
+        }
+
+        &__promo {
+            background-color: $brand-red;
+            font-size: 18px;
+            font-family: $PTS;
+            font-weight: 700;
+            color: #fff;
+            padding: 6px 8px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        &__name {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 15px 24px;
+            font-size: 14px;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75));
         }
 
         &__body {
             flex: 1;
             padding: 24px;
+
         }
 
         &__footer {
@@ -37,6 +67,7 @@
         &__rating {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 10px;
 
             &__left {
                 display: flex;
@@ -59,7 +90,7 @@
 
             .icon-star {
                 color: #C4C4C4;
-                font-size: 11px;
+                font-size: 10px;
             }
 
             &--strock {
@@ -80,19 +111,20 @@
         }
 
         &__subtitle {
-            font-family: $OPS;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
-            color: #999;
+            color: $text-base;
+            line-height: 18px;
+            height: 36px;
+            overflow: hidden;
         }
 
         &__description {
-            font-family: $OPS;
             font-size: 16px;
             font-weight: 400;
             color: $text-base;
             line-height: 26px;
-            max-height: 105px;
+            max-height: 103px;
             overflow: hidden;
         }
     }
