@@ -26,6 +26,16 @@ module.exports = (env, options) => {
                     loader: 'babel-loader',
                 },
                 {
+                    test: /jquery.+\.js$/,
+                    use: [{
+                        loader: 'expose-loader',
+                        options: 'jQuery'
+                    },{
+                        loader: 'expose-loader',
+                        options: '$'
+                    }]
+                },
+                {
                     test: /\.scss$/,
                     use: ExtractTextPlugin.extract({
                         use: [
