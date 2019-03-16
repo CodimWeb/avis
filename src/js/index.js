@@ -4,15 +4,12 @@ import bootstrap from 'bootstrap';
 import '../js/slick.min.js';
 
 
-$(".slider").not('.slick-initialized').slick({
-    
+//fix dropdown
+console.log('start')
+$('.btn-primary').click(function(){
+    console.log('btn');
 });
-
-// $('.slider').slick({
-//     // dots: true,
-//     // infinite: true,
-//     // speed: 300,
-//     slidesToShow: 4,
-//     // centerMode: true,
-//     // variableWidth: true
-//   });
+$('.dropdown').click(function(){
+    console.log('dropdown');
+    $('.dropdown-menu').toggleClass('show');
+});
