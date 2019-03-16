@@ -1,15 +1,25 @@
+.btn {
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none !important;
+    }
+}
+
 .btn-danger {
     border-radius: 0;
     border: 2px solid $brand-red;
     background-color: $brand-red;
     font-size: 16px;
     font-weight: 700;
-    outline: none;
-    padding: 24px 80px;
+    padding: 21px 20px;
 
     .btn-icon-arrow {
         margin-left: 10px;
         font-size: 12px;
+        transform: translate3d(0, -1px, 0);
         display: inline-block;
         transition: 0.25s ease-in-out; 
     }
@@ -19,7 +29,7 @@
         border: 2px solid $brand-red-light;
 
         .btn-icon-arrow {
-            transform: translateX(10px);
+            transform: translate3d(10px, -1px,  0);
             
         }
     }

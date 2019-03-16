@@ -1,32 +1,35 @@
 .servises {
     background-color: $brand-blue-light;
     padding: 112px 0;
-}
-.item {
-    background-color: #fff;
-    padding: 40px 20px;
 
-    &__title {
-        font-family: $PTS;
-        font-size: 36px;
-        font-weight: 700;
-        color: $text-base;
-        line-height: 36px;
-    }
-
-    &__description {
-        font-family: $OPS;
-        font-size: 16px;
-        color: $text-base;
-    }
-
-    &__price {
-        font-family: $PTS;
-        font-size: 36px;
-        font-weight: 700;
-        color: $brand-red;
-    }
-    .btn-danger {
-        padding: 16px 90px;
+    &__item {
+        background-color: #fff;
+        padding: 40px 20px;
+    
+        &__title {
+            font-family: $PTS;
+            font-size: 36px;
+            font-weight: 700;
+            color: $text-base;
+            line-height: 44px;
+        }
+    
+        &__description {
+            font-family: $OPS;
+            font-size: 16px;
+            color: $text-base;
+        }
+    
+        &__price {
+            font-family: $PTS;
+            font-size: 36px;
+            font-weight: 700;
+            color: $brand-red;
+        }
+        .btn-danger {
+            padding: 13px 20px;
+            width: 100%;
+            max-width: 292px;
+        }
     }
 }
