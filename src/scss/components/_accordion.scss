@@ -1,0 +1,19 @@
+.custom-accordion {
+    max-width: 736px;
+    margin: 0 auto;
+
+    .card {
+        border: none;
+        border-radius: 0;
+        margin-bottom: 16px;
+    }
+
+    .card-header {
+        border: none;
+        background-color: $brand-blue-light;
+    }
+
+    .card-body {
+        background-color: $brand-blue-light;
+    }
+}

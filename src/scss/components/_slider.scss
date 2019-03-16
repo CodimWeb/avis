@@ -1,16 +1,138 @@
 .slider {
+    margin-right: -80px;
+    margin-bottom: 112px;
     &-item {
+        width: 288px;
+        height: 536px;
+        display: flex;
+        flex-direction: column;
+        background-color: $brand-blue-light;
 
         &__photo {
             padding-top: 74%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
         }
 
         &__body {
-
+            flex: 1;
+            padding: 24px;
         }
 
         &__footer {
+            padding: 0 24px 24px;
+        }
 
+        &__title {
+            font-family: $PTS;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 26px;
+            color: $text-base;
+            overflow: hidden;
+            max-height: 52px;
+        }
+
+        &__rating {
+            display: flex;
+            justify-content: space-between;
+
+            &__left {
+                display: flex;
+            }
+        }
+
+        
+        &__rating-panel {
+            position: relative;
+            margin-right: 5px;
+        }
+
+        &__stars {
+            display: flex;
+
+            div {
+                line-height: 1;
+                display: flex;
+            }
+
+            .icon-star {
+                color: #C4C4C4;
+                font-size: 11px;
+            }
+
+            &--strock {
+                
+            }
+
+            &--fill {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                overflow: hidden;
+
+                .icon-star {
+                    color: $brand-red;
+                }
+            }
+        }
+
+        &__subtitle {
+            font-family: $OPS;
+            font-size: 14px;
+            font-weight: 400;
+            color: #999;
+        }
+
+        &__description {
+            font-family: $OPS;
+            font-size: 16px;
+            font-weight: 400;
+            color: $text-base;
+            line-height: 26px;
+            max-height: 105px;
+            overflow: hidden;
         }
     }
+}
+
+.slider-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+
+    .base-title {
+        margin: 0;
+    }
+
+    &__nav {
+        display: flex;
+
+        .slick-btn {
+            border: 2px solid $brand-gray;
+            outline: none;
+            background-color: transparent;
+            width: 54px;
+            height: 54px;
+            padding: 0;
+            transition: 0.25s ease-in-out; 
+
+            .icon {
+                color: $brand-red;
+                font-size: 20px;
+            }
+
+            &:hover {
+                border: 2px solid $brand-red;
+            }
+        }
+    }
+}
+
+
+.slick-slide {
+    margin-right: 32px;
 }

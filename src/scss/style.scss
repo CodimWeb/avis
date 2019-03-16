@@ -1,6 +1,9 @@
 //bs 4
 @import "~bootstrap/scss/bootstrap";
 
+//plugins
+@import 'plugin/slick';
+
 //abstract
 @import 'abstract/variables';
 @import 'abstract/helpers';
@@ -20,6 +23,4 @@
 @import 'components/buttons';
 @import 'components/servises';
 @import 'components/slider';
-
-//plugins
-@import 'plugin/slick';
+@import 'components/accordion';

@@ -5,6 +5,7 @@
     &:focus,
     &:active {
         outline: none !important;
+        box-shadow: none !important;
     }
 }
 
@@ -33,5 +34,25 @@
             
         }
     }
+
+    &--ghost {
+        background: transparent;
+        color: $brand-red;
+
+        .icon {
+            color: $brand-red;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: transparent !important;
+            border-color: $brand-red !important;
+            color: $brand-red !important;
+        }
+    }
 }
 
+.btn--middle {
+    padding: 13px 20px;
+}
