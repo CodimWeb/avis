@@ -1,3 +1,7 @@
+.faq {
+    padding: 112px 0;
+}
+
 .custom-accordion {
     max-width: 736px;
     margin: 0 auto;
@@ -11,9 +15,52 @@
     .card-header {
         border: none;
         background-color: $brand-blue-light;
+        padding: 0;
+
+        .btn-link {
+            display: block;
+            width: 100%;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: $PTS;
+            text-decoration: none;
+            padding: 24px 50px 24px 24px;
+            background-color: $brand-red;
+            color: #fff;
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 41px;
+                top: 39px;
+                background-image: url(../img/minus.png);
+                height: 2px;
+                width: 18px;
+            }
+        }
+
+        .collapsed {
+            background-color: $brand-blue-light;
+            color: $text-base;
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 41px;
+                top: 31px;
+                background-image: url(../img/plus.png);
+                width: 18px;
+                height: 18px;
+            }
+        }
     }
 
     .card-body {
         background-color: $brand-blue-light;
+        font-size: 16px;
+        font-family: $OPS;
+        line-height: 26px;
+        padding: 24px 38px 24px 24px;
     }
 }
