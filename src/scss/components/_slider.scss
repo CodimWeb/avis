@@ -152,7 +152,7 @@
             width: 54px;
             height: 54px;
             padding: 0;
-            transition: 0.25s ease-in-out; 
+            position: relative;
 
             .icon {
                 color: $brand-red;
@@ -160,8 +160,13 @@
             }
 
             &:hover {
-                border: 2px solid $brand-red;
+                border-color: $brand-red;
+                z-index: 2;
             }
+        }
+
+        .slick-next {
+            margin-left: -2px;;
         }
     }
 }
@@ -169,4 +174,5 @@
 
 .slick-slide {
     margin-right: 32px;
+    outline: none;
 }

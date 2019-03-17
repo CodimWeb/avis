@@ -1,5 +1,6 @@
 .main-baner {
     display: flex;
+    margin-bottom: 179px;
 
     &__photo {
         height: 477px;
@@ -12,6 +13,77 @@
     }
 
     &__body {
+        width: 288px;
+        display: flex;
+        align-items: flex-end;
+    }
 
+    &__item {
+        margin-right: -320px;
+        background: $brand-blue-light;
+        padding: 50px 50px 0;
+        position: relative;
+        z-index: 2;
+        transform: translateY(70px);
+
+        &__address {
+            font-size: 16px;
+            opacity: 0.6;
+            line-height: 22px;
+        }
+
+        &__description {
+            padding-bottom: 50px;
+        }
+
+        &__greeting {
+            font-size: 18px;
+            font-family: $PTS;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 14px;
+        }
+
+        &__footer {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-right: -50px;
+        }
+
+        &__phone-title {
+            font-size: 14px;
+            line-height: 20px;
+            opacity: 0.6;
+            margin: 0;
+        }
+
+        &__phone {
+            font-size: 16px;
+            color: $brand-red;
+            margin: 0;
+            font-weight: 700;
+
+            .icon {
+                display: inline-block;
+                font-size: 18px;
+                margin-right: 5px;
+            }
+        }
+
+        &__btn {
+            width: 288px;
+            height: 70px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+                font-size: 23px;
+                display: inline-block;
+                margin-right: 3px;
+            }
+        }
     }
 }

@@ -16,7 +16,7 @@
                 <div class="header__panel">
                     <div class="logo-wrapper">
                         <a href="#" class="logo">
-                            <img src="img/logo.svg" alt="">
+                            <img src="img/svg/logo.svg" alt="">
                         </a>
                     </div>
                     <div class="nav">
@@ -39,23 +39,48 @@
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Local Food</a>
                             </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">More</a>
-                            </li>
                         </ul>
                         <div class="dropdown nav__dropdown">
-                            <button class="nav__dropdown__btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span>Menu</span>
+                            <button class="btn nav__dropdown__btn dropdown-toggle" type="button" id="dropdown-menu" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="nav__dropdown__btn__desctop-text">More</span>
+                                <span class="nav__dropdown__btn__mobile-text">Menu</span>
                                 <span class="burger-menu">
                                     <span class="burger-menu__line"></span>
                                     <span class="burger-menu__line"></span>
                                     <span class="burger-menu__line"></span>
                                 </span>
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Rules</a>
-                                <a class="dropdown-item" href="#">Terms and Conditions</a>
-                                <a class="dropdown-item" href="#">Best Deals</a>
+                            <div class="dropdown-menu nav__dropdown-menu" aria-labelledby="dropdown-menu">
+                                <a class="dropdown-item nav__dropdown-item" href="#">
+                                    <span class="nav__dropdown-item__text">Rules</span>
+                                </a>
+                                <a class="dropdown-item nav__dropdown-item" href="#">
+                                    <span class="nav__dropdown-item__text" >Terms and Conditions</span>
+                                </a>
+                                <a class="dropdown-item nav__dropdown-item" href="#">
+                                    <span class="nav__dropdown-item__text">Best Deals</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown nav__dropdown nav__dropdown--language">
+                            <button class="btn nav__dropdown__btn nav__dropdown__btn--language dropdown-toggle" type="button" id="dropdown-select" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="nav__dropdown__selected-language">
+                                    <img src="img/flag/flag-1.png" alt="">
+                                </span>
+                            </button>
+                            <div class="dropdown-menu nav__dropdown-menu nav__dropdown-menu--language" aria-labelledby="dropdown-select">
+                                <a class="dropdown-item nav__dropdown-item" href="#">
+                                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-1.png" alt=""></span>
+                                    <span class="nav__dropdown-item__text">English</span>
+                                </a>
+                                <a class="dropdown-item nav__dropdown-item" href="#">
+                                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-2.png" alt=""></span>
+                                    <span class="nav__dropdown-item__text">Russian</span>
+                                </a>
+                                <a class="dropdown-item nav__dropdown-item" href="#">
+                                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-3.png" alt=""></span>
+                                    <span class="nav__dropdown-item__text">Chinese</span>
+                                </a>
                             </div>
                         </div> 
                     </div>
@@ -64,13 +89,27 @@
         </header>
         <div class="container">
             <div class="main-baner">
-                <div class="logo-wrapper">
-                    
+                <div class="main-baner__body">
+                    <div class="main-baner__item">
+                        <div class="main-baner__item__address">71-79 Southwark Street, London</div>
+                        <h2 class="discount__title">Mercure London Bridge</h2>
+                        <div class="main-baner__item__description">
+                            <div class="main-baner__item__greeting">Welcome!</div>
+                            <p class="card-info__text mb-9">Mercure London Bridge is a flagship Mercure hotel located in the centre of London.</p>
+                            <p class="card-info__text">This Travlet is a guide to Mercure London Bridge and the surrounding area. We've included directions to find us, a number of hints and tips for local places to eat and drink along with links for things to do and places to see.</p>
+                        </div>
+                        <div class="main-baner__item__footer">
+                            <div>
+                                <p class="main-baner__item__phone-title">Call Reception</p>
+                                <p class="main-baner__item__phone"><i class="icon icon-phone"></i>+44 20 7123 1234</p>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-danger main-baner__item__btn"><i class="icon icon-place"></i>See all places around</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="main-baner__photo" style="background-image: url(img/main-baner-img.jpg);">
-
-                </div>
-                <div class="main-baner__body">
 
                 </div>
             </div>
