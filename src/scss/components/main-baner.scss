@@ -1,0 +1,17 @@
+.main-baner {
+    display: flex;
+
+    &__photo {
+        height: 477px;
+        max-height: 477px;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        flex: 1;
+        margin-right: -80px;
+    }
+
+    &__body {
+
+    }
+}

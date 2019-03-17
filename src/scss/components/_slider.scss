@@ -62,6 +62,7 @@
             color: $text-base;
             overflow: hidden;
             max-height: 52px;
+            margin-bottom: 4px;
         }
 
         &__rating {
@@ -117,6 +118,7 @@
             line-height: 18px;
             height: 36px;
             overflow: hidden;
+            margin-bottom: 16px;
         }
 
         &__description {

@@ -22,20 +22,26 @@
             width: 100%;
             text-align: left;
             font-size: 20px;
+            line-height: 26px;
             font-weight: 700;
             font-family: $PTS;
             text-decoration: none;
             padding: 24px 50px 24px 24px;
             background-color: $brand-red;
+            border-radius: 0;
             color: #fff;
+            position: relative;
 
             &:after {
                 content: '';
                 position: absolute;
-                right: 41px;
-                top: 39px;
+                right: 31px;
+                top: 50%;
+                transform: translateY(-50%);
                 background-image: url(../img/minus.png);
-                height: 2px;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 18px;
                 width: 18px;
             }
         }
@@ -45,13 +51,7 @@
             color: $text-base;
 
             &:after {
-                content: '';
-                position: absolute;
-                right: 41px;
-                top: 31px;
                 background-image: url(../img/plus.png);
-                width: 18px;
-                height: 18px;
             }
         }
     }

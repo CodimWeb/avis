@@ -1,6 +1,7 @@
 .servises {
     background-color: $brand-blue-light;
     padding: 112px 0;
+    margin-top: 112px;
 
     &__item {
         background-color: #fff;
@@ -13,12 +14,14 @@
             color: $text-base;
             line-height: 44px;
             margin-bottom: 12px;
+            margin-bottom: 8px;
         }
     
         &__description {
             font-family: $OPS;
             font-size: 16px;
             color: $text-base;
+            margin-bottom: 16px;
         }
     
         &__price {
@@ -26,6 +29,7 @@
             font-size: 36px;
             font-weight: 700;
             color: $brand-red;
+            margin-bottom: 10px;
         }
         .btn-danger {
             padding: 13px 20px;
