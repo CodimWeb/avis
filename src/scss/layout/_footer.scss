@@ -25,9 +25,11 @@
             font-family: $OPS;
             font-size: 14px;
             color: $text-base;
+            transition: 0.25s ease-in-out;
 
             &:hover {
-                color: $text-base;
+                text-decoration: none;
+                color: $brand-red;
             }
 
         }
@@ -49,6 +51,7 @@
         &__link {
             text-decoration: none;
             color: $brand-red;
+            transition: 0.25s ease-in-out;
 
             &:hover {
                 color: $brand-red-light;

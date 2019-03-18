@@ -26,8 +26,9 @@
     }
 
     &:hover {
-        background-color: $brand-red-light;
-        border: 2px solid $brand-red-light;
+        border: 2px solid $brand-red;
+        background-color: $brand-red;
+        opacity: 0.8;
 
         .btn-icon-arrow {
             transform: translate3d(10px, -1px,  0);
@@ -43,12 +44,22 @@
             color: $brand-red;
         }
 
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: transparent !important;
-            border-color: $brand-red !important;
-            color: $brand-red !important;
+        &:hover {
+            color: $brand-red;
+            background: transparent;
+        }
+    }
+
+    &:disabled,
+    &.disabled {
+        opacity: 1;
+        background: $brand-gray-light !important;
+        border-color: $brand-gray-light !important;
+
+        &:hover {
+            opacity: 1;
+            background: $brand-gray-light !important;
+            border-color: $brand-gray-light !important;
         }
     }
 }

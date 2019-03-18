@@ -1,7 +1,7 @@
 .wrapper {
     max-width: 1280px;
-    overflow-x: hidden;
     margin: 0 auto;
+    position: relative;
 }
 
 .container {
@@ -18,11 +18,16 @@
     &:active {
         color: $brand-red;
         text-decoration: none;
-        border-color: transparent;
+        border-color: rgba(226, 62, 87, 0.8);
     }
 }
 
 .link-border-primary {
     border-bottom: 1px solid $brand-red;
     line-height: 1.2;
+
+}
+
+.full-right {
+    margin-right: calc((1150px - 100vw) / 2);
 }

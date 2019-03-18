@@ -11,10 +11,19 @@ slider.each(function(){
         dots: false,
         infinite: false,
         speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         variableWidth: true,
         prevArrow: $('.slick-prev-'+id),
         nextArrow: $('.slick-next-'+id),
     });
+});
+
+$('.slick-btn').on('mouseover', function(e){
+    if(!$(this).hasClass('slick-disabled')) {
+        $(this).parent().addClass('active');
+    }  
+});
+
+$('.slick-btn').on('mouseout', function(e){
+    $(this).parent().removeClass('active');
 });

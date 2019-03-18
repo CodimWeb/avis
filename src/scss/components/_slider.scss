@@ -1,5 +1,5 @@
 .slider {
-    margin-right: -80px;
+    // margin-right: -80px;
     margin-bottom: 112px;
     &-item {
         width: 288px;
@@ -145,6 +145,7 @@
 
     &__nav {
         display: flex;
+        position: relative;
 
         .slick-btn {
             border: 2px solid $brand-gray;
@@ -154,6 +155,7 @@
             height: 54px;
             padding: 0;
             position: relative;
+            transition: 0.15s ease-in-out;
 
             .icon {
                 color: $brand-red;
@@ -164,10 +166,42 @@
                 border-color: $brand-red;
                 z-index: 2;
             }
+
+            &.slick-disabled {
+               border-color: $brand-gray;
+               
+               .icon {
+                   color: $brand-gray;
+               }
+            }
+        }
+
+        .slick-prev {
+            border-right: 0;
         }
 
         .slick-next {
-            margin-left: -2px;;
+            border-left: 0;
+        }
+
+        &:before {
+            content: '';
+            width: 2px;
+            position: absolute;
+            background: $brand-gray;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-1px);
+            transition: 0.15s ease-in-out;
+        }
+
+        &.active {
+
+            &:before {
+                background: $brand-red;
+            } 
         }
     }
 }

@@ -31,18 +31,25 @@
             border-radius: 0;
             color: #fff;
             position: relative;
+            transition: 0.25s ease-in-out;
 
-            &:after {
-                content: '';
+            .icons {
                 position: absolute;
-                right: 31px;
+                right: 30px;
                 top: 50%;
                 transform: translateY(-50%);
-                background-image: url(../img/minus.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 18px;
                 width: 18px;
+                height: 18px;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    fill: #fff;
+                }
+
+                .icon-plus {
+                    display: none;
+                }
             }
         }
 
@@ -50,8 +57,26 @@
             background-color: $brand-blue-light;
             color: $text-base;
 
-            &:after {
-                background-image: url(../img/plus.png);
+            .icons {
+                svg {
+                    fill: #aaa;
+                    transition: 0.25s ease-in-out;
+                }
+
+                .icon-plus {
+                    display: inline-block;
+                }
+
+                .icon-minus {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                color: $brand-red;
+                svg {
+                    fill: $brand-red;
+                }
             }
         }
     }

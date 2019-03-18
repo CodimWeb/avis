@@ -1,4 +1,9 @@
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     &__panel {
         height: 90px;
         background: #fff;
@@ -29,10 +34,11 @@
 
 .nav {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex: 1;
     height: 100%;
-    align-items: center;
-    margin: 0 -15px;
+    margin: 0;
 
     &__list {
         display: flex;
@@ -71,7 +77,6 @@
         }
 
         &.active {
-            text-shadow: 0 0 .5px $text-base;
             color: $text-base;
             text-decoration: none;
 
@@ -81,7 +86,6 @@
         }
 
         &:hover {
-            text-shadow: 0 0 .5px $text-base;
             color: $text-base;
             text-decoration: none;
 
@@ -115,7 +119,7 @@
             }
             
             &:hover {
-                text-shadow: 0 0 .5px $text-base;
+
             }
         }
     }
@@ -173,22 +177,25 @@
 
         &:hover {
             background: transparent;
-            border-left: 4px solid $brand-red;
 
             .nav__dropdown-item__text {
                 color: #fff;
-                text-shadow: 0 0 .75px #fff;
                 opacity: 1;
             }
+        }
+
+        &.active {
+            border-left: 4px solid $brand-red;
         }
     }
 
     &__dropdown__btn--language {
+        padding-right: 30px;
         &:before {
             content: '';
             position: absolute;
             top: 50%;
-            right: -9px;
+            right: 0;
             transform: translateY(-50%);
             width: 13px;
             height: 12px;
