@@ -24,12 +24,12 @@
     &:active {
         color: $brand-red;
         text-decoration: none;
-        border-color: rgba(226, 62, 87, 0.4);
+        border-color: $brand-red;
     }
 }
 
 .link-border-primary {
-    border-bottom: 1px solid $brand-red;
+    border-bottom: 1px solid rgba(226, 62, 87, 0.4);
     line-height: 1.2;
 
 }
