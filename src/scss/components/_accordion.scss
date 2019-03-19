@@ -10,6 +10,10 @@
         border: none;
         border-radius: 0;
         margin-bottom: 16px;
+
+        .card-header {
+            margin-bottom: 0;
+        }
     }
 
     .card-header {

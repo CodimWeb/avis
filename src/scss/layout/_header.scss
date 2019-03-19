@@ -3,6 +3,9 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 50;
+    background: #fff;
+    transition: 0.25s ease-in-out;
 
     &__panel {
         height: 90px;
@@ -10,6 +13,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &.top {
+        transform: translateY(-101%);
+    }
+
+    &.header-fixed {
+        position: fixed;
+        transform: translateY(0) !important;
+
+        .header__panel {
+            height: 70px;
+        }
     }
 }
 

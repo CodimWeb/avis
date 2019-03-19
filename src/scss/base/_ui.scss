@@ -1,3 +1,9 @@
+.page-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -18,7 +24,7 @@
     &:active {
         color: $brand-red;
         text-decoration: none;
-        border-color: rgba(226, 62, 87, 0.8);
+        border-color: rgba(226, 62, 87, 0.4);
     }
 }
 
@@ -29,5 +35,5 @@
 }
 
 .full-right {
-    margin-right: calc((1150px - 100vw) / 2);
+    margin-right: calc((1135px - 100vw) / 2);
 }

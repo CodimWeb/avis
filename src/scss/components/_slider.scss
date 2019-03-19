@@ -3,7 +3,7 @@
     margin-bottom: 112px;
     &-item {
         width: 288px;
-        height: 550px;
+        height: 575px; //550px;
         display: flex;
         flex-direction: column;
         background-color: $brand-blue-light;
@@ -48,7 +48,6 @@
         &__body {
             flex: 1;
             padding: 24px;
-
         }
 
         &__footer {
@@ -63,7 +62,7 @@
             color: $text-base;
             overflow: hidden;
             max-height: 52px;
-            margin-bottom: 4px;
+            margin-bottom: 5px;
         }
 
         &__rating {
@@ -117,7 +116,7 @@
             font-weight: 400;
             color: $text-base;
             line-height: 18px;
-            height: 36px;
+            max-height: 36px;
             overflow: hidden;
             margin-bottom: 16px;
         }
@@ -177,31 +176,17 @@
         }
 
         .slick-prev {
-            border-right: 0;
+            
         }
 
         .slick-next {
-            border-left: 0;
-        }
-
-        &:before {
-            content: '';
-            width: 2px;
-            position: absolute;
-            background: $brand-gray;
-            top: 0;
-            bottom: 0;
+            position: relative;
             z-index: 2;
-            left: 50%;
-            transform: translateX(-1px);
-            transition: 0.15s ease-in-out;
-        }
-
-        &.active {
-
-            &:before {
-                background: $brand-red;
-            } 
+            border-left: 2px solid transparent;
+            margin-left: -2px;
+            &.slick-disabled {
+                border-left: 2px solid transparent; 
+            }
         }
     }
 }
