@@ -36,5 +36,14 @@
             width: 100%;
             max-width: 292px;
         }
+
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        margin-top: 56px;
+        padding: 56px 0;
     }
 }

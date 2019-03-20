@@ -4,6 +4,12 @@
     padding: 30px 24px;
     margin-bottom: 32px;
 
+    &__item {
+        @media (max-width: 767px) {
+            margin-bottom: 16px;
+        }
+    }
+
     &__title {
         font-family: $PTS;
         font-size: 20px;
@@ -119,6 +125,10 @@
                 transform: translateX(8px);
             }
         }
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 24px;
     }
 }
 

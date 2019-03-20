@@ -6,7 +6,6 @@
 
 //abstract
 @import 'abstract/variables';
-@import 'abstract/helpers';
 
 //base
 @import 'base/fonts';
@@ -26,3 +25,7 @@
 @import 'components/slider';
 @import 'components/accordion';
 @import 'components/main-baner';
+@import 'components/mobile-collapse';
+
+//helpers
+@import 'abstract/helpers';

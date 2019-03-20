@@ -28,3 +28,9 @@ $i: 20;
   line-height: 1;
   transform: translateY(1px)
 }
+
+.reset-margin-mobile {
+  @media (max-width: 767px) {
+    margin: 0;
+  }
+}

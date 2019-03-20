@@ -34,6 +34,10 @@
     height: 100%;
     display: flex;
     justify-content: flex-start;
+
+    @media (max-width: 1199px) {
+        width: 160px;
+    }
 }
 
 .logo {
@@ -68,6 +72,10 @@
     &__item {
         height: 100%;
         padding: 0 15px;
+
+        @media (max-width: 1199px) {
+            padding: 0 10px;
+        }
     }
 
     &__link {
@@ -226,6 +234,10 @@
 
     &__dropdown-menu--language {
         left: -158px;
+
+        @media (max-width: 1199px) {
+            left: -152px;
+        }
     }
 }
 

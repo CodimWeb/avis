@@ -1,5 +1,4 @@
 .slider {
-    // margin-right: -80px;
     margin-bottom: 112px;
     &-item {
         width: 288px;
@@ -130,6 +129,10 @@
             overflow: hidden;
         }
     }
+
+    @media (max-width: 767px) {
+        margin-bottom: 56px;
+    }
 }
 
 .slider-title {
@@ -163,7 +166,7 @@
 
             &:hover {
                 border-color: $brand-red;
-                z-index: 2;
+                z-index: 3;
             }
 
             &.slick-disabled {
@@ -188,6 +191,14 @@
                 border-left: 2px solid transparent; 
             }
         }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
     }
 }
 
@@ -195,4 +206,8 @@
 .slick-slide {
     margin-right: 32px;
     outline: none;
+
+    @media (max-width: 767px) {
+        margin-right: 24px;
+    }
 }
