@@ -1,5 +1,9 @@
 .faq {
     padding: 112px 0;
+
+    @media (max-width: 767px) {
+        padding: 0 0 56px;
+    }
 }
 
 .custom-accordion {
@@ -54,6 +58,14 @@
                 .icon-plus {
                     display: none;
                 }
+
+                @media (max-width: 767px) {
+                    right: 14px;
+                }
+            }
+
+            @media (max-width: 767px) {
+                padding: 24px 40px 24px 24px;
             }
         }
 

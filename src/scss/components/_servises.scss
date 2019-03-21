@@ -46,4 +46,8 @@
         margin-top: 56px;
         padding: 56px 0;
     }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }

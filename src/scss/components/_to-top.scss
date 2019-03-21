@@ -1,0 +1,28 @@
+.to-top {
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+    width: 54px;
+    height: 54px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0, 0.25);
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+    z-index: 10;
+
+    .icon {
+        color: #fff;
+    }
+
+    &.show {
+        display: flex;
+        opacity: 1;
+    }
+
+    &:hover {
+        background: rgba(0,0,0, 0.5);
+    }
+
+}

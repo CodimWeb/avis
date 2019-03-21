@@ -1,21 +1,21 @@
-.mobile-collapse {
-    &__footer {
-        display: none;
-        text-align: center;
-    }
+// .mobile-collapse {
+//     &__footer {
+//         display: none;
+//         text-align: center;
+//     }
 
-    &__body {
-        max-height: 1000px;
-        transition: 0.25s ease-in-out;
-        overflow: hidden;
-    }
+//     &__body {
+//         max-height: 1000px;
+//         transition: 0.25s ease-in-out;
+//         overflow: hidden;
+//     }
 
-    &.collapsed {
-        .mobile-collapse__body {
-            max-height: 300px;
-        }
-        .mobile-collapse__footer {
-            display: block;
-        }
-    }
-}
+//     &.collapsed {
+//         .mobile-collapse__body {
+//             max-height: 300px;
+//         }
+//         .mobile-collapse__footer {
+//             display: block;
+//         }
+//     }
+// }

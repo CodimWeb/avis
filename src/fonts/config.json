@@ -301,6 +301,34 @@
       "css": "info-circled",
       "code": 59411,
       "src": "fontawesome"
+    },
+    {
+      "uid": "b3681fe332623161e3f43030d2bf79e9",
+      "css": "arrow-top",
+      "code": 59412,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M610.9 470.6L694.1 387.4 347 40.4 0 387.4 83.2 470.6 347 206.7 610.9 470.6ZM294.2 1000L411.8 1000 411.8 176.5 294.1 176.4 294.2 1000Z",
+        "width": 706
+      },
+      "search": [
+        "icon-arrow-top"
+      ]
+    },
+    {
+      "uid": "de0c74f441515b92be062f41d932d5db",
+      "css": "close",
+      "code": 59413,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M294.1 235.3L789.8 731 744.7 776 249.1 280.4 294.1 235.3ZM805.4 280.4L309.8 776 264.7 731 760.4 235.3 805.4 280.4Z",
+        "width": 1000
+      },
+      "search": [
+        "x"
+      ]
     }
   ]
 }

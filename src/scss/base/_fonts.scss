@@ -19,4 +19,10 @@ body {
         margin-bottom: 40px;
         letter-spacing: 1px;
     }
+
+    @media (max-width: 359px) {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0 0 40px
+    }
 }

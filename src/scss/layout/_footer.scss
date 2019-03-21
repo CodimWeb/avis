@@ -7,6 +7,12 @@
         justify-content: space-between;
         border-bottom: 1px solid #E5EAF3;
         padding: 32px 0;
+
+        @media (max-width: 767px) {
+            padding: 32px 0 27px;
+            display: block;
+            text-align: center;
+        }
     }
 
 
@@ -14,10 +20,14 @@
         list-style-type: none;
         display: flex;
         padding: 0;
+        margin: 0;
         
         &__item {
             margin-right: 32px;
 
+            @media (max-width: 767px) {
+                margin: 0 0 20px;
+            }
         }
 
         &__link {
@@ -33,12 +43,20 @@
             }
 
         }
+
+        @media (max-width: 767px) {
+            display: block;
+            text-align: center;
+            overflow: hidden;
+            margin: 0 0 10px;
+        }
     }
 
     &__social {
         list-style-type: none;
         display: flex;
         padding: 0;
+        margin: 0;
 
         &__item {
             margin-right: 32px;
@@ -53,10 +71,17 @@
             color: $brand-red;
             transition: 0.25s ease-in-out;
 
+            @media (max-width: 767px) {
+                font-size: 17px;
+            }
+
             &:hover {
                 color: $brand-red-light;
             }
+        }
 
+        @media (max-width: 767px) {
+            justify-content: center;
         }
     }
 

@@ -134,10 +134,6 @@
             padding: 0 15px;
             transition: 0.25s ease-in-out;
 
-            &__mobile-text {
-                display: none;
-            }
-
             &:after {
                 content: none;
             }
@@ -145,6 +141,10 @@
             &:hover {
 
             }
+        }
+
+        @media (max-width: 767px) {
+            display: none;
         }
     }
 
@@ -199,7 +199,8 @@
             line-height: 28px;
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
             background: transparent;
 
             .nav__dropdown-item__text {
@@ -210,6 +211,7 @@
 
         &.active {
             border-left: 4px solid $brand-red;
+            background: transparent;
         }
     }
 
@@ -254,5 +256,19 @@
 
     &:last-child {
         margin: 0;
+    }
+}
+
+.btn-offcanvas {
+    display: none;
+
+    @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 104px;
+        height: 54px;
+        border-radius: 0;
+        border: 2px solid #E5EAF3;
     }
 }

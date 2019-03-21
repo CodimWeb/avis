@@ -16,10 +16,23 @@
         font-family: $PTS;
         font-weight: 700;
         margin-bottom: 24px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 359px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 
     &__body {
         padding: 40px 50px 0;
+
+        @media (max-width: 767px) {
+            padding: 32px 24px 0;
+        }
     }
 
     &__footer {
@@ -35,11 +48,25 @@
             transform: translateY(1px);
             display: inline-block;
         }
+
+        @media (max-width: 767px) {
+            padding: 0;
+        }
+    }
+
+    &__info {
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     .btn-danger {
         width: 100%;
         max-width: 288px;
+
+        @media (max-width: 767px) {
+            margin: 0 auto;
+        }
     }
 }
 
