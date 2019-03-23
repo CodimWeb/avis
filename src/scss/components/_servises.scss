@@ -15,6 +15,7 @@
             line-height: 44px;
             margin-bottom: 12px;
             margin-bottom: 8px;
+            letter-spacing: 1.2px;
         }
     
         &__description {
@@ -45,9 +46,5 @@
     @media (max-width: 991px) {
         margin-top: 56px;
         padding: 56px 0;
-    }
-
-    @media (max-width: 767px) {
-        padding: 0 0 56px;
     }
 }

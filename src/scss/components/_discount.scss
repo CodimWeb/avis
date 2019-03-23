@@ -1,14 +1,21 @@
 .discount-wrapper {
     min-height: 556px;
     background-image: url(../img/discount.jpg);
+    background-position: center top;
     display: flex;
     align-items: flex-end;
     margin-bottom: 112px;
+    margin-left: 80px;
+
+    @media (max-width: 1199px) {
+        margin-left: 0;
+    }
 }
 
 .discount {
     background-color: #F3F6FB;
     max-width: 608px;
+    margin-left: -95px;
 
     &__title {
         font-size: 36px;
@@ -16,6 +23,7 @@
         font-family: $PTS;
         font-weight: 700;
         margin-bottom: 24px;
+        letter-spacing: 1.2px;
 
         @media (max-width: 767px) {
             margin-bottom: 16px;
@@ -67,6 +75,10 @@
         @media (max-width: 767px) {
             margin: 0 auto;
         }
+    }
+
+    @media (max-width: 1199px) {
+        margin-left: 0;
     }
 }
 

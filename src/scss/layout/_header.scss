@@ -88,6 +88,7 @@
         height: 100%;
         position: relative;
         transition: 0.25s ease-in-out;
+        opacity: 0.6;
 
         &:after {
             content: '';
@@ -103,6 +104,7 @@
         &.active {
             color: $text-base;
             text-decoration: none;
+            opacity: 1;
 
             &:after {
                 width: 100%;
@@ -112,6 +114,7 @@
         &:hover {
             color: $text-base;
             text-decoration: none;
+            opacity: 1;
 
             &:after {
                 width: 100%;
@@ -133,13 +136,15 @@
             background: transparent;
             padding: 0 15px;
             transition: 0.25s ease-in-out;
+            opacity: 0.6;
+            transition: 0.25s ease-in-out;
 
             &:after {
                 content: none;
             }
             
             &:hover {
-
+                opacity: 1;
             }
         }
 
@@ -190,7 +195,7 @@
         }
 
         &:last-child {
-            border-bottom: none;
+            // border-bottom: none;
         }
 
         &__flag {
@@ -212,10 +217,16 @@
         &.active {
             border-left: 4px solid $brand-red;
             background: transparent;
+            opacity: 1;
+
+            .nav__dropdown-item__text {
+                opacity: 1;
+            }
         }
     }
 
     &__dropdown__btn--language {
+        opacity: 1;
         padding-right: 30px;
         &:before {
             content: '';

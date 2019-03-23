@@ -9,7 +9,6 @@
         background-position: center top;
         background-repeat: no-repeat;
         flex: 1;
-        margin-right: -80px;
 
         @media (max-width: 1199px) {
             margin-right: 0;
@@ -67,6 +66,7 @@
             font-weight: 700;
             line-height: 24px;
             margin-bottom: 14px;
+            letter-spacing: 0.7px;
         }
 
         &__footer {

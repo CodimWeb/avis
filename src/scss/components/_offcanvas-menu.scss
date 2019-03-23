@@ -6,7 +6,7 @@
     height: 100%;
     overflow: hidden;
     z-index: 60;
-    transform: translateX(-101%);
+    transform: translateX(101%);
     transition: 0.3s ease-in-out;
 
     &__inner {
@@ -26,6 +26,9 @@
     &__list {
         width: 50%;
         min-width: 50%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
 
         .nav__dropdown-item {
             position: relative;

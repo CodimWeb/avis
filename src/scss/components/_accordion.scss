@@ -2,7 +2,7 @@
     padding: 112px 0;
 
     @media (max-width: 767px) {
-        padding: 0 0 56px;
+        padding: 56px 0;
     }
 }
 
@@ -39,6 +39,7 @@
             border-radius: 0;
             color: #fff;
             position: relative;
+            letter-spacing: 0.5px;
             transition: 0.25s ease-in-out;
 
             .icons {
