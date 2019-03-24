@@ -95,7 +95,6 @@ let showHeader = (scrollHeader,scrollLength,header)=> {
 
 // Functions
 function getSections($links) {
-  console.log($links);
   return $(
     $links
       .map((i, el) => $(el).attr('href'))

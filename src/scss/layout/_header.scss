@@ -146,6 +146,10 @@
             &:hover {
                 opacity: 1;
             }
+
+            @media (max-width: 767px) {
+                opacity: 1;
+            }
         }
 
         @media (max-width: 767px) {
