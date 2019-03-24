@@ -90,7 +90,12 @@ module.exports = (env, options) => {
         optimization: {
             minimizer: [new UglifyJsPlugin({
                 test: /\.js(\?.*)?$/i,
-                extractComments: true,
+                extractComments: {
+                    condition: true,
+                    filename() {
+                        return '';
+                    },
+                }
             })],
         },
     }
