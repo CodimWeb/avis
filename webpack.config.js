@@ -4,6 +4,7 @@ let HtmlWebpackPlugin = require('html-webpack-plugin');
 let autoprefixer = require('autoprefixer');
 let cssnano = require('cssnano');
 let CopyWebpackPlugin = require('copy-webpack-plugin');
+let UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = (env, options) => {
     let production = options.mode === 'production';
@@ -85,7 +86,10 @@ module.exports = (env, options) => {
                 to: './fonts'
               },
             ]),
-        ]
+        ],
+        optimization: {
+            minimizer: [new UglifyJsPlugin()],
+        },
     }
 
     conf.devtool = production ? false : 'eval-sourcemap';
