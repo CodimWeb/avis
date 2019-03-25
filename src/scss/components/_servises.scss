@@ -41,10 +41,14 @@
         @media (max-width: 991px) {
             margin-bottom: 40px;
         }
+        @media (max-width: 767px) {
+            margin-bottom: 24px;
+            padding: 30px 24px;
+        }
     }
 
     @media (max-width: 991px) {
         margin-top: 56px;
-        padding: 56px 0;
+        padding: 56px 0 32px;
     }
 }

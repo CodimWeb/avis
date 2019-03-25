@@ -69,8 +69,8 @@ $(document).ready(function(){
     $('body,html').animate({
       scrollTop: ($(target).offset().top - 70) //70 header height
     }, 1000);
-    smooth.removeClass('active');
-    $('[data-target="'+target+'"]').addClass('active');
+    // smooth.removeClass('active');
+    // $('[data-target="'+target+'"]').addClass('active');
   });
 
   $('.btn-collapse').on('click', function(){
