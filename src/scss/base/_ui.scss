@@ -1,7 +1,12 @@
 body {
     position: relative;
-    overflow-y: scroll;
 }
+
+.disabled-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
 .page-wrapper {
     width: 100%;
     overflow-x: hidden;

@@ -47,9 +47,16 @@ $(document).ready(function(){
   });
     
   let offcanvas = $('.offcanvas-menu');
-  $('.btn-offcanvas, .offcanvas-menu__list__close').on('click', function(e){
+  $('.btn-offcanvas').on('click', function(e){
     e.preventDefault();
-    offcanvas.toggleClass('show');
+    offcanvas.addClass('show');
+    $('body').addClass('disabled-scroll');
+  });
+
+  $('.offcanvas-menu__list__close').on('click', function(e){
+    e.preventDefault();
+    offcanvas.removeClass('show');
+    $('body').removeClass('disabled-scroll');
   });
 
   $('.btn-show-language').on('click', function(e){
@@ -66,6 +73,7 @@ $(document).ready(function(){
     e.preventDefault();
     let target = $(this).data('target');
     offcanvas.removeClass('show');
+    $('body').removeClass('disabled-scroll');
     $('body,html').animate({
       scrollTop: ($(target).offset().top - 70) //70 header height
     }, 1000);
