@@ -1,9 +1,10 @@
 .discount-wrapper {
-    min-height: 556px;
+    height: 556px;
     background-image: url(../img/discount.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     display: flex;
+    justify-content: flex-start;
     align-items: flex-end;
     margin-bottom: 112px;
     margin-left: 80px;
@@ -13,6 +14,7 @@
     }
 
     @media (max-width: 767px) {
+        height: auto;
         margin-left: -15px;
         margin-right: -15px;
         margin-bottom: 56px;
